@@ -3,6 +3,9 @@ const app = express();
 const fs = require('fs');
 const objHeroes = JSON.parse(fs.readFileSync('./data/heroes.json'),'utf-8');
 
+
+// Link documentacion:
+// https://docs.google.com/document/d/1mqyCjF964ijVk5BJdAj1cWcd7xQAfjkDBL0nY3Aufbw/edit
 app.get("/",(req,res)=>{
     res.send("Ni Superman, IronMan o La Mujer Maravilla son tan importantes como las y los Heroes de carne y hueso que encontraras en este sitio. Esperamos que ellas y ellos te sirvan como inspiracion para poder cumplir tus objetivo. Recuerda: Nunca pares de creer en ti");
 });
